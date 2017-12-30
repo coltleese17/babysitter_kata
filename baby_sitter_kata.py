@@ -2,7 +2,9 @@
 
 
 def getBabySitterStartHours(hours):
-	return null
+	if (hours>=17):
+		return True
+	return False
 
 def main():
 	# getBabySitterStartHours(5):
