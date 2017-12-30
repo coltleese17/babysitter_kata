@@ -9,5 +9,8 @@ class babysitterKataTDD(unittest.TestCase):
 		self.assertEqual(True, baby_sitter_kata.getBabySitterStartHours(17))
 		self.assertEqual(True, baby_sitter_kata.getBabySitterStartHours(18))
 
+	def testBabySitterHoursLessThanSeventeenReturnsFalse(self):
+		self.assertEqual(False, baby_sitter_kata.getBabySitterStartHours(16))	
+
 if __name__ == '__main__':
 	unittest.main()		
