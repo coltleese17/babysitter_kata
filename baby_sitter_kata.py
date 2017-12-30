@@ -4,6 +4,8 @@
 def getBabySitterStartHours(hours):
 	if (hours>=17):
 		return True
+	else:
+		return False	
 
 def main():
 	# getBabySitterStartHours(5):
