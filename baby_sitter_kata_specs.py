@@ -12,5 +12,8 @@ class babysitterKataTDD(unittest.TestCase):
 	def testBabySitterHoursLessThanSeventeenReturnsFalse(self):
 		self.assertEqual(False, baby_sitter_kata.getBabySitterStartHours(16))	
 
+	def testBabySitterFinishingHoursMoreThanStartingHoursAndLessThanFourReturnFalse(self):
+		self.assertEqual(False, baby_sitter_kata.getBabySitterFinishHours(4))	
+
 if __name__ == '__main__':
 	unittest.main()		
